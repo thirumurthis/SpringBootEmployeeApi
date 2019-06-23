@@ -4,7 +4,7 @@ A sample Spring boot application
 ### Spring annoatation used
 ##### @RestController
 *{can be used in the controller class, at class level or method level}*
-##### @RequestMapping  (method=RequestMethod.GET, produces = MediaType.APPLICATION.JSON_VALUE) 
+##### @RequestMapping  (method=RequestMethod.GET, produces = MediaType.APPLICATION.JSON_VALUE, path="{id}") 
 *{options, cosumes}*
 ##### @RequestBody  
 *{when the default constructor not available for Bean or POJO, use @JsonProperty annotation on bean}*
@@ -15,6 +15,7 @@ A sample Spring boot application
 ##### @Service
 *{similar to @component annotation, this has a slight variation to mark ths class a service layer}*
 ##### @JsonProperty
+*{jackson annotation used within the spring boot parent jar, in this case the value default attribute should match the bean class properties name. For ex. in Employee class, private  @JsonProperty("id") UUId id; }*
 
 ### HTTP METHOD USAGE
 ##### GET
