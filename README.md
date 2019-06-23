@@ -38,3 +38,12 @@ A sample Spring boot application
 
 ##### PayLoad
 *{in this case any data that is passes from the client browser/PostMan, in this case it is a JSON payload retrived by controller/resources using @RequestBody annotation}*
+
+
+### HTML PayLoad usage
+##### static folder
+*{The static folder can hold .html, .css, etc file, to render the html page. In this case we can create an index.html and have some conent displayed in the screen too}*
+
+##### template folder
+*{template folder holds template file that can be resolved by java code, template engine like Apache velocity, Thymeleaf, etc engines}*
+*{once the index.html page is palaced with the content in the static folder and restarted, the http://localhost:8080 should render the html page}*
