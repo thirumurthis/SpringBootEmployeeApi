@@ -46,3 +46,4 @@ A sample Spring boot application
 
 ##### template folder
 *{template folder holds template file that can be resolved by java code, template engine like Apache velocity, Thymeleaf, etc engines}*
+*{once the index.html page is palaced with the content in the static folder and restarted, the http://localhost:8080 should render the html page}*
